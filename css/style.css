@@ -319,6 +319,7 @@ header{
     width: 18rem;
     height: 25rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 /*Estilização da imagem do Card com seus Efeitos*/
 .card-img-wrapper{
@@ -371,10 +372,8 @@ header{
     width: 80%;
     margin-bottom: 2rem;
 }
-/*Botão Saiba mais do card*/
-.card-info button{
-    width: 8rem;
-    height: 2.5rem;
+/*Classe de cor universal para botão*/
+.btn{
     background: #000000;
     font-family: var(--font-action);
     color: #eee;
@@ -382,6 +381,12 @@ header{
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0,0,0, .4);
     cursor: pointer;
+}
+/*Botão Saiba mais do card*/
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    
 }
 
 .card-info button:hover{
@@ -394,4 +399,108 @@ header{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+/*Formatação do Formulário*/
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, 0.5);
+}
+/*Formatação da foto lateral*/
+.contato-left{
+    width: 35%;
+    background: 
+        linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22,0.9)),
+        url(../img/bg3.jpg);
+    background-size: cover;
+    border-radius: 2% 0% 0% 2%;
+}
+/*Area do form*/
+.contato-right{
+    width: 65%;
+    background-color:#eee;
+    padding: 1rem 3rem 3rem 3rem;
+    border-radius: 0% 2% 2% 0%;
+}
+
+/*Formatação do Titulo form*/
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color:#272727;
+    font-size:3rem;
+    font-weight: lighter;
+    border-radius: 0% 2% 2% 0%;
+}
+/*Alinhamento do campos e botões dentro da area*/
+.sessao-contato form{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Elemento pai referente ao field-label*/
+.input-group{
+    position: relative;
+}
+/*Formatação do texto nos campos*/
+.field{
+    background:transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin:1rem 0;
+}
+/*Limite de campo text-area*/
+.input-group textarea{
+    padding-top:1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+/*Alinhamento e estilização dos titulos de cada sessão */
+.field-label{
+    position: absolute;
+    left: 0;
+    top:2rem;
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+/*Efeito de seleção em cada area*/
+.field:focus ~ label{
+    top:0;
+}
+
+.field:focus{
+    border-bottom: 1px solid;
+}
+/*Estilo do botão do form*/
+.btn-submit{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover{
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000);
 }
