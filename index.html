@@ -10,7 +10,7 @@
 <body>
 
     <div class="container">
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="img/bg3.jpg" alt="">
             </div>
@@ -32,10 +32,10 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -46,7 +46,7 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -108,7 +108,7 @@
                 <div class="conhecimentos-img-wrapper"><img src="img/conhecimentos.png" alt="imagem conhecimento"></div>
             </div>
         </section>
-        <section calss="sessao-projetos">
+        <section calss="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -118,8 +118,8 @@
                         <img src="img/projeto1.jpg" alt="imagem do Projeto MyBooks"/>
                     </div>
                     <div class="card-info">
-                        <h2>My Books</h2>
-                        <h3>TypeScript Html Css JavaScript</h3>
+                        <h2>Projetos Github</h2>
+                        <h3>HTML, Css, JavaScript, TypeScript</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iusto odit molestias blanditiis aliquam delectus possimus totam dolorum ducimus voluptatum.</p>
                         <button class="btn">Saiba Mais</button>
                     </div>
@@ -129,7 +129,7 @@
                         <img src="img/projeto2.jpg" alt="Imagem do projeto NerdioAtividade">
                     </div>
                     <div class="card-info">
-                        <h2>Blog Nerdioatividade</h2>
+                        <h2>Projetos Wordpress</h2>
                         <h3>Wordpress</h3>
                         <p>Web-Site voltado para noticias no mundo geek e nerd, com materias autorais e noticias mundiais sobre Animes, Jogos, Filmes, Séries e muito mais</p>
                         <a href="https://nerdioatividade.com.br" target="blank"><button class="btn">Saiba Mais</button></a>
@@ -140,7 +140,7 @@
                         <img src="img/projeto1.jpg" alt="Imagem Projeto 3">
                     </div>
                     <div class="card-info">
-                        <h2>Proximo Projeto</h2>
+                        <h2>Illustrator, Photoshop</h2>
                         <h3>A Fazer</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque optio veniam cumque sint numquam sunt pariatur illo sequi ullam.</p>
                         <button class="btn">Saiba Mais</button>
@@ -150,7 +150,7 @@
             </div>
         </section>
 
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -174,6 +174,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+              <h1>Faça um orçamento</h1>
+              <div class="form-orc">
+              <form>
+                <label for="qtde">Qtde de Páginas</label>
+                <input type="number" min="1" name="qtde" id="qtde">
+                <label for="js">Preciso de um script JS</label>
+                <input type="checkbox" name="js" id="js">
+                <label>Layout</label>
+                <div class="group-layout">
+                  <div>
+                    <input type="radio" name="layout" id="layout-sim">
+                    <label for="layout-sim">Preciso de um layout</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="layout" id="layout-nao">
+                    <label for="layout-nao">Já tenho um layout</label>
+                  </div>
+                </div>
+                <label for="prazo">Prazo</label>
+                <input type="range" name="prazo" id="prazo" min="1" max="10">
+                <label id="preco">R$ 0,00</label>
+                <button class="btn btn-orcamento" type="submit">Enviar</button>
+              </form>
+            </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy;2021, Lucas Prantes - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                    <li><a href=""><i class="fab fa-facebook f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                </div>
+            </div>
+          </footer>
+          <a href="#home"id="link-topo"> 
+              <i class="fas fa-arrow-up"></i>
+          </a>
     </div>
 </body>
 <script src="js/script.js"></script>
