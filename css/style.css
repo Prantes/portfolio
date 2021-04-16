@@ -166,10 +166,7 @@ header{
     background: linear-gradient(to right, #434343, #000000);
 }
     /*Criação da animação de Fade para os objetos do banner*/
-@keyframes fade{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
+
 /*Estilização do menu, tamanho em tela, font, icons*/
 .sidebar{
     width: 20rem;
@@ -356,7 +353,8 @@ header{
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    padding: 1.5rem;
+    margin-top:1rem ;
+    padding-left: 1.5rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0, .4);
     transition: all .3s;
 }
@@ -381,7 +379,7 @@ header{
     color: #eee;
     font-weight: 500;
     width: 80%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 /*Classe de cor universal para botão*/
 .btn{
@@ -638,54 +636,125 @@ footer{
 
 /*Responsividade*/
 
-/*@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+ 
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
     header {
       height: 50vh;
+      width: 100vw;
     }
+
+
     section .conhecimentos-img-wrapper{
         display: none;
     }
     section .conhecimentos{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 6rem);
-        column-gap: 2rem;
-        row-gap: 1rem;
-    }
-    .conhecimento:nth-child(1){
-        padding: 2rem;
-        grid-column:1/2;
-        grid-row:1/2;
+        display:grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(6, 6rem);
+        row-gap: .5rem;
+        text-align: justify;
     }
 
-    .conhecimento:nth-child(2){
-        padding: 2rem;
-        grid-column:1/4;
-        grid-row:3/9;
+    .conhecimento:nth-child(1){
+        grid-column:2/8;
+        grid-row:1/3;
     }
+    
+    .conhecimento:nth-child(2){
+        grid-column:2/8;
+        grid-row:3/5;
+    }
+    
     .conhecimento:nth-child(3){
-        padding: 2rem;
-        grid-column:1/2;
+        grid-column:2/8;
         grid-row:5/-1;
     }
     
     .conhecimento:nth-child(4){
-        padding: 2rem;
-        grid-column:3/4;
+        grid-column:10/16;
         grid-row:1/3;
     }
     
     .conhecimento:nth-child(5){
-        grid-column:2/4;
+        grid-column:10/16;
         grid-row:3/5;
     }
     
     .conhecimento:nth-child(6){
-        grid-column:2/4;
+        grid-column:10/16;
         grid-row:5/-1;
     }
     .sessao-conhecimentos{
         background-color: rgb(235, 235, 235);
     }
+
+   .projetos{
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: repeat(2, .3fr);
+        grid-template-rows: repeat(3);
+    }
+    .card:nth-child(1){
+        grid-column:1/4;
+        width: 44rem;
+        height: 15rem;
+    }
+    .card:nth-child(2){
+        grid-column:2/1;
+        padding-left: 1rem;
+        justify-content: center;
+    }
+    .card:nth-child(3){
+        grid-column:3/3;
+        padding-right: 1rem;
+        justify-content: center;
+    }
+
+    .contato-left{
+        display: none;
+    }
+    .contato-right{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .contato-wrapper{
+        width: 70%;
+        height: 40rem;
+        display: flex;
+        box-shadow: 0 1rem 3rem rgba(0,0,0, 0.5);
+    }
+
+    .orcamento-wrapper{
+        width: 90%;
+        height: 50%;
+        background:#ffffff99;
+        border-radius: 10px;
+        box-shadow: 0 0.1rem 0.3rem rgba(0,0,0, 0.5);
+        position: relative;
+    }
+
+    .sessao-orcamento{
+        width: 100%;
+        height: 80vh;    
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content{
+        width: 90%;
+    }
+
+    .social-list a{
+        margin: 0 1rem;
+        font-size:1.3rem ;
+    }
 }
-*/
+
+
