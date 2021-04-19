@@ -636,10 +636,10 @@ footer{
 
 /*Responsividade Tablet*/
 
-@media screen and (max-width: 768px) {
+@media   (min-width: 700px), (max-width: 1024px) {
  
     header {
-      height: 60vh;
+      height: 75vh;
       width: 100vw;
     }
 
@@ -724,14 +724,13 @@ footer{
     }
     .contato-wrapper{
         width: 70%;
-        height: 40rem;
         display: flex;
         box-shadow: 0 1rem 3rem rgba(0,0,0, 0.5);
     }
 
     .orcamento-wrapper{
         width: 90%;
-        height: 55%;
+        height: 75%;
         background:#ffffff99;
         border-radius: 10px;
         box-shadow: 0 0.1rem 0.3rem rgba(0,0,0, 0.5);
@@ -759,7 +758,7 @@ footer{
 
 
  
-    @media screen and (max-width: 321px) {
+    @media (min-width: 320px), (max-width: 500px) {
 
     header{
         width: 100vh;
@@ -855,7 +854,6 @@ footer{
         height: 30rem;
         display: flex;
         box-shadow: 0 1rem 3rem rgba(0,0,0, 0.5);
-
     }
 
     .contato-left{
