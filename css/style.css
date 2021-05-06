@@ -284,6 +284,10 @@ header{
 }
 
 /*Formatação de estilo de cada conhecimento */
+.sessao-conhecimentos{
+    padding-bottom: 2rem;
+}
+
 .conhecimento-header{
     display:flex;
     align-items: center;
@@ -292,7 +296,7 @@ header{
 
 .conhecimento-header i{
     font-size: 2.5rem;
-    margin-right: .3rem;
+    margin-right: .4rem;
 }
 /*Titulo do conhecimento X*/
 .conhecimentos-header h3{
@@ -302,9 +306,12 @@ header{
 }
 /*Texto do conhecimento X*/
 .conhecimento-text{
+    line-height: 1.3rem;
     font-family: var(--font-secondary);
     margin-top: 1rem;
 }
+
+
 /*ajustes na imagem central, primeiro para local de ocupação e depois um envelopamento para não furar a demarcação*/
 .conhecimentos-img-wrapper{
     grid-column: 7/11;
@@ -651,7 +658,7 @@ footer{
         grid-template-columns: repeat(16, 1fr);
         grid-template-rows: repeat(6, 6rem);
         row-gap: .5rem;
-        text-align: justify;
+        
     }
 
     .conhecimento:nth-child(1){
@@ -763,6 +770,11 @@ footer{
         width: 100vh;
         height: 100vh;
     }
+    .banner h1{
+        width: 90%;
+        font-size: 4rem;
+        line-height: 3.7rem;
+    }
     .sidebar{
         height: 100%;
     }
@@ -779,7 +791,9 @@ footer{
         row-gap: .5rem;
         text-align: justify;
     }
-
+    .conhecimentos p{
+        line-height: 1rem;
+    }
     .conhecimento:nth-child(1){
         grid-column:2/8;
         grid-row:1/3;
