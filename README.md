@@ -2,7 +2,7 @@
 Site de apresentação, habilidades e competencias feito seguindo video aulas tentando seguir regras de responsividades para todas as plataformas.
 
 <h3><strong>Visão Desktop</strong></h3>
-<h4>Acesso - https://prantes.github.io/portifolio/</h4>
+<h4>Acesso - https://prantes.github.io/portfolio/</h4>
 
 ![image](https://user-images.githubusercontent.com/63598185/179425538-a079fd89-d423-43c6-861e-a39ea7f12464.png)
 ![image](https://user-images.githubusercontent.com/63598185/179425612-b59e8ace-8fc5-423f-bbbf-fd693ae6304d.png)
